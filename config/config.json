@@ -1,10 +1,10 @@
 {
   "test": {
     "username": "root",
-    "password": "Ilserver@ThkcxR$23",
-    "database": "registration",
+    "password": "1289",
+    "database": "campus_drive",
     "host": "127.0.0.1",
-    "port": 8041,
+    "port": 3306,
     "dialect": "mysql",
     "logging": true,
     "poll": {
@@ -15,10 +15,10 @@
   },
   "development": {
     "username": "root",
-    "password": "Ilserver@ThkcxR$23",
-    "database": "registration",
+    "password": "1289",
+    "database": "campus_drive",
     "host": "127.0.0.1",
-    "port": 8041,
+    "port": 3306,
     "dialect": "mysql",
     "logging": false,
     "poll": {
@@ -29,10 +29,10 @@
   },
   "production": {
     "username": "root",
-    "password": "Ilserver@ThkcxR$23",
-    "database": "registration",
+    "password": "1289",
+    "database": "campus_drive",
     "host": "127.0.0.1",
-    "port": 8041,
+    "port": 3306,
     "dialect": "mysql",
     "logging": false,
     "poll": {
