@@ -1,0 +1,44 @@
+{
+  "test": {
+    "username": "root",
+    "password": "Ilserver@ThkcxR$23",
+    "database": "registration",
+    "host": "127.0.0.1",
+    "port": 8041,
+    "dialect": "mysql",
+    "logging": true,
+    "poll": {
+      "max": 5,
+      "min": 0,
+      "idle": 10000
+    }
+  },
+  "development": {
+    "username": "root",
+    "password": "Ilserver@ThkcxR$23",
+    "database": "registration",
+    "host": "127.0.0.1",
+    "port": 8041,
+    "dialect": "mysql",
+    "logging": false,
+    "poll": {
+      "max": 5,
+      "min": 0,
+      "idle": 10000
+    }
+  },
+  "production": {
+    "username": "root",
+    "password": "Ilserver@ThkcxR$23",
+    "database": "registration",
+    "host": "127.0.0.1",
+    "port": 8041,
+    "dialect": "mysql",
+    "logging": false,
+    "poll": {
+      "max": 5,
+      "min": 0,
+      "idle": 10000
+    }
+  }
+}
