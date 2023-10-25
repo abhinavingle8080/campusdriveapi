@@ -1,0 +1,164 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Color Pencil Common APIs",
+    "description": "Apis for commen things"
+  },
+  "servers": [
+    {
+      "url": "https://api.colorpencildev.ilserver.cloud/api/common/",
+      "description": "Production Server"
+    },
+    {
+      "url": "https://api.colorpencildev.ilserver.cloud/api/common/",
+      "description": "Development Server"
+    },
+    {
+      "url": "http://localhost:8010/api/common/",
+      "description": "Localhost Server"
+    }
+  ],
+  "tags": [],
+  "paths": {
+    "/get-app-version": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/SecretKeyHeader"
+          }
+        ],
+        "responses": {},
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "platform_type": {
+                    "example": "android"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/get-system-settings": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/SecretKeyHeader"
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/get-system-setting": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/SecretKeyHeader"
+          }
+        ],
+        "responses": {},
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "config_key": {
+                    "example": "max_video_length"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/grades": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/SecretKeyHeader"
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/levels": {
+      "post": {
+        "summary": "Get levels with pagination",
+        "description": "Endpoint to retrieve levels with pagination",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/SecretKeyHeader"
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "page": {
+                    "type": "integer",
+                    "default": 1,
+                    "example": 1,
+                    "description": "Page number for pagination."
+                  },
+                  "limit": {
+                    "type": "integer",
+                    "default": 10,
+                    "example": 10,
+                    "description": "Number of items to return per page."
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses":{}
+      }
+    },
+    "/test": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/SecretKeyHeader"
+          }
+        ],
+        "responses": {}
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    },
+    "parameters": {
+      "SecretKeyHeader": {
+        "name": "x-secret-key",
+        "in": "header",
+        "required": true,
+        "schema": {
+          "type": "string"
+        },
+        "example": "AAAAkoghShswfUoAweKhoj5PJexrkWi3sJfBzQdybKiQmsIksSV2GIZWO5N3L6k3DFCq5X"
+      }
+    }
+  }
+}

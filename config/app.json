@@ -1,0 +1,44 @@
+{
+    "test": {
+        "SENDGRID_API_KEY": "",
+        "SENDGRID_EMAIL_ID": "",
+	    "MAIL_USERNAME": "hello@colorpencil.com",
+        "MAIL_PASSWORD": "Simple123!@#",
+        "MAIL_FROM": "hello@colorpencil.com",
+        "BASE_URL": "http://localhost:8010",
+        "REQ_BASE_URL": "http://localhost:3000",
+        "IMAGE_RELATIVE_PATH": "storage/images",
+        "IMAGE_PATH": "http://localhost:8010/storage/images",
+        "PORT": 8000,
+        "FCM_SERVER_KEY": "",
+        "ADMIN_BASE_URL": "http://localhost:3000"
+    },
+    "development": {
+        "SENDGRID_API_KEY": "",
+        "SENDGRID_EMAIL_ID": "",
+	    "MAIL_USERNAME": "hello@colorpencil.com",
+        "MAIL_PASSWORD": "Simple123!@#",
+        "MAIL_FROM": "hello@colorpencil.com",
+        "BASE_URL": "https://api.colorpencildev.ilserver.cloud",
+        "REQ_BASE_URL": "https://api.colorpencildev.ilserver.cloud",
+        "IMAGE_RELATIVE_PATH": "storage/images",
+        "IMAGE_PATH": "https://api.colorpencildev.ilserver.cloud/storage/images",
+        "PORT": 8000,
+        "FCM_SERVER_KEY": "",
+        "ADMIN_BASE_URL": "http://localhost:3000"
+    },
+    "production": {
+        "SENDGRID_API_KEY": "",
+        "SENDGRID_EMAIL_ID": "",
+	    "MAIL_USERNAME": "hello@colorpencil.com",
+        "MAIL_PASSWORD": "Simple123!@#",
+        "MAIL_FROM": "hello@colorpencil.com",
+        "BASE_URL": "https://api.colorpencildev.ilserver.cloud",
+        "REQ_BASE_URL": "https://api.colorpencildev.ilserver.cloud",
+        "IMAGE_RELATIVE_PATH": "storage/images",
+        "IMAGE_PATH": "https://api.colorpencildev.ilserver.cloud/storage/images",
+        "PORT": 1337,
+        "FCM_SERVER_KEY": "",
+        "ADMIN_BASE_URL": "http://localhost:3000"
+    }
+}

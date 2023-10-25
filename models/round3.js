@@ -48,6 +48,12 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'Round3',
+    tableName: "round3",
+    deletedAt: "deleted_at",
+    createdAt: "created_at",
+    updatedAt: "updated_at",
+    paranoid: true, //use for soft delete with using deleted_at
+    underscored: true //making underscored colomn as deletedAt to deleted_at
   });
   return Round3;
 };
