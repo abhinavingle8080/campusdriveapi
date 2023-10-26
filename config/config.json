@@ -1,8 +1,8 @@
 {
   "test": {
     "username": "root",
-    "password": "1289",
-    "database": "campus_drive",
+    "password": "Ilserver@ThkcxR$23",
+    "database": "registration",
     "host": "127.0.0.1",
     "port": 3306,
     "dialect": "mysql",
@@ -15,8 +15,8 @@
   },
   "development": {
     "username": "root",
-    "password": "1289",
-    "database": "campus_drive",
+    "password": "Ilserver@ThkcxR$23",
+    "database": "registration",
     "host": "127.0.0.1",
     "port": 3306,
     "dialect": "mysql",
@@ -29,8 +29,8 @@
   },
   "production": {
     "username": "root",
-    "password": "1289",
-    "database": "campus_drive",
+    "password": "Ilserver@ThkcxR$23",
+    "database": "registration",
     "host": "127.0.0.1",
     "port": 3306,
     "dialect": "mysql",
